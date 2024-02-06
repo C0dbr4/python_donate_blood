@@ -1,0 +1,11 @@
+[build]
+  command = "pip install -r requirements.txt && python app.py"
+  publish = "."  # No need to specify a publish directory for Flask apps
+
+[dev]
+  command = "python app.py"  # Command to run the Flask app locally for development
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

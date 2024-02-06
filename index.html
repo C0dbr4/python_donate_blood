@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Light gray background */
+}
+
+.container {
+    max-width: auto;
+    height: auto;
+
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    border-left: 8px solid red; /* Red border on the left side */
+    border-right: 100px solid red; /* Red border on the right side */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.411);
+}
+
+
+h1 {
+    margin-left: 60%; /* Add some space between label and input box */
+    padding: 1px;
+    font-family: Verdana, sans-serif;
+    
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block; /* Make labels appear on the same line */
+    width: 200px; /* Adjust width of labels */
+    text-align: auto; /* Align text to the right for better alignment with input boxes */
+    margin-right: 5px; /* Add some space between label and input box */
+    padding: 1px;
+    font-family: Verdana, sans-serif;
+}
+
+input[type="text"] {
+    display: inline-block; /* Make input boxes appear on the same line */
+    width: 230px;
+    height: 26px;
+    
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container img {
+    position: absolute;
+    top: -80px; /* Adjust vertical position */
+    right: calc(50% - px); /* Adjust horizontal position */
+    width: 200px; /* Adjust image size */
+    height: 200px; /* Adjust image size */
+    border-radius: 50%; /* Make the image round */
+    border: 4px solid red; /* Add red border */
+    box-sizing: border-box; /* Include border in image size */
+}
+
+
+input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  border-radius: 50px;
+  width: 97%;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  color: rgb(240, 41, 41);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgb(236, 29, 29);
+}
+
+input[type="submit"]:hover {
+  color: white;
+
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  background-color: rgb(240, 30, 30);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="/register" method="post">
+            <div class="input-container">
+                <img src="https://i.ibb.co/2jVJN5f/blood.png" alt="Profile Image" > <h1>DONATE BLOOD</h1><br><br>
+                
+            </div>
+            <label for="name">Name:</label>
+            
+                <input type="text" id="name" name="name" required><br><br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+
+            <label for="blood_group">Blood Group:</label>
+            <input type="text" id="blood_group" name="blood_group" required><br><br>
+
+            <input type="submit" value="REGISTER" class="log">
+        </form>
+    </div>
+</body>
+</html>
